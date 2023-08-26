@@ -1,0 +1,26 @@
+.intro {
+    padding: 10%;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: rgb(242, 242, 242);
+    text-shadow: 1px 1px 1px rgb(166, 166, 166),
+        2px 2px 2px rgb(166, 166, 166),
+        3px 3px 3px rgb(166, 166, 166),
+        4px 4px 4px rgb(166, 166, 166),
+        5px 5px 5px rgb(166, 166, 166);
+}
+
+.intro {
+    color: rgb(147, 112, 147);
+}
+
+.line {
+    height: 8px;
+    width: 200px;
+    border-radius: 2px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(164, 163, 163));
+    margin-bottom: 20px;
+}
+
