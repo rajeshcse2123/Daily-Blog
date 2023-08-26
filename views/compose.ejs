@@ -1,0 +1,47 @@
+<%-include("partials/header") %>
+
+<style>
+
+    form{
+        min-height: 80vh;
+    }
+
+    .input{
+        width: 75vw;
+        border: solid 1px rgb(180, 177, 177);
+        border-radius: 5px;
+        position: relative;
+        top: -10px;
+    }
+
+    .input:focus{
+        outline: solid 2px ;
+        outline: none;
+        border: none;
+        box-shadow: 1px 1px 10px 1px rgba(95, 95, 179, 0.242);
+    }
+    button{
+        background-color: rgb(115, 115, 212);
+        color: white;
+        border: none;
+        padding: 5px 8px;
+        border-radius: 5px;
+    }
+</style>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <p>Title</p>
+    <input type="text" name="inputTitle" class="input" autocomplete="off">
+    <br><br>
+    <p>Post</p>
+    <textarea class="input" name="inputPost" style="height: 100px;"></textarea>
+    <p>Blog Image url:</p>
+    <input type="text" class=input name="inputImgUrl" autocomplete="off">
+
+    <br>
+    <button type="submit" name="buttonPublish">Publish</button>
+</form>
+
+
+<%- include("partials/footer") %>

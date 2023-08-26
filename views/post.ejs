@@ -1,0 +1,60 @@
+<%- include("partials/header") %>
+
+    <style>
+        img {
+            margin: 20px;
+            width: 70vw;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+
+        }
+
+        h1 {
+            font-family: fantasy;
+            font-size: 50px;
+            color: rgb(222, 228, 242);
+            text-shadow: 1px 1px 1px rgb(60, 82, 129),
+                2px 2px 2px rgb(60, 82, 129),
+                3px 3px 3px rgb(60, 82, 129),
+                4px 4px 4px rgb(60, 82, 129),
+                5px 5px 5px rgb(60, 82, 129);
+        }
+
+        p {
+            color: rgb(30, 30, 77);
+        }
+        .cover{
+
+            min-height: 90vh;
+        }
+    </style>
+
+
+
+
+    <div class="cover">
+        <!-- <div class="line"></div> -->
+        <img src="<%= mainPostRender.img %>" alt="">
+
+        <h1>
+            <%= mainPostRender.title %>
+        </h1>
+        <p><%- mainPostRender.body %></p>
+    </div>
+    <form action="/delete" method="post">
+        <button type="submit" name="buttonPublish" style="
+            border: none;
+            background-image: linear-gradient(rgb(218, 218, 218) , rgb(108, 108, 141));
+            font-weight: bold;
+            letter-spacing: 1.5px;  
+            padding: 10px; 
+            border-radius: 50px;
+            position: relative;
+            top: -10px;
+        ">Delete Post</button>
+    </form>
+
+
+
+    <%- include("partials/footer") %>
